@@ -1,31 +1,25 @@
-<!DOCTYPE html>
-<html lang="de">
-<head>
-  <meta charset="utf-8" />
-	<title>lem-ag.ch/live</title>
-	<!-- Global site tag (gtag.js) - Google Analytics -->
-<script async="" src="https://www.googletagmanager.com/gtag/js?id=G-13BBEQF9P8"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
+<!doctype html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<title>lem-ag.ch/live</title>
+		<!-- Global site tag (gtag.js) - Google Analytics -->
+			<script async="" src="https://www.googletagmanager.com/gtag/js?id=G-13BBEQF9P8"></script>
+			<script>
+			window.dataLayer = window.dataLayer || [];
+			function gtag(){dataLayer.push(arguments);}
+			gtag('js', new Date());
+			gtag('config', 'G-13BBEQF9P8');
+			</script>
+	</head>
 
-  gtag('config', 'G-13BBEQF9P8');
-</script>
-  </head>
+	<body>
+		<iframe
+		src="https://player.twitch.tv/nilsleumann"
+		height="<100%>"
+		width="<100%>"
+		allowfullscreen="<allowfullscreen>">
+		</iframe>
 
-<body>
-  <script src="https://player.twitch.tv/js/embed/v1.js"></script>
-<div id="&lt;player1&gt;"></div>
-<script type="text/javascript">
-  var options = {
-    width: "100%",
-    height: "100%",
-    channel: "nilsleumann",
-    parent: ["lem-ag.ch"]
-  };
-  var player = new Twitch.Player("<player1>", options);
-  player.setVolume(1.0);
-</script>
-</body>
+	</body>
 </html>
