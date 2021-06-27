@@ -19,6 +19,10 @@ a:visited { color: #1756a9; }
 /* Der ganze Textbereich ist max. 740px breit */
 .zentrierung { max-width: 740px; margin: auto; }
 
+/* Mobile Geräte Rand vergrössern */
+@media screen and (max-width: 768px) {
+    .zentrierung { max-width: 90%; margin: auto; }
+}
 
  /* The navigation bar */
  /* fixe Navigation mit fetter Linie oben und leichter Linie unten */
