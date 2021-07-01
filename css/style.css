@@ -41,3 +41,41 @@ a:visited { color: #1756a9; }
 .site-footer { border-top: 1px solid #d1d1d1; padding: 30px 0; margin-bottom: 15px; }
 /* Spezielle Schriftfarbe und Grösse */
 .footer { color: #6b6b6b; font-size: 1em; }
+
+ /* Style buttons */
+a#button {
+    display: inline-block;
+    padding: 11px 32px;
+    background: #0022fa;
+    border-width: 5px;
+    border-style: solid;
+    border-right-color: #304af0;
+    border-bottom-color: #304af0;
+    border-left-color: #304af0;
+    border-top-color: #304af0;
+    
+    font-size: 20px;
+    font-weight: bold;
+    letter-spacing: 0px;
+    font-family: Arial, Helvetica, sans-serif;
+    color: #ffffff;
+    text-decoration: none; 
+    
+    text-shadow: 
+        1px 1px 0px black,
+        -1px -1px 0px black,
+        1px -1px 0px black,
+        -1px 1px 0px black;
+}
+
+a#button:hover {
+     color: #777;
+}
+
+a#button:active {
+    padding: 14px 29px 8px 34px;
+    border-right-color: #304af0;
+    border-bottom-color: #304af0;
+    border-left-color: #304af0;
+    border-top-color: #304af0;  
+}
