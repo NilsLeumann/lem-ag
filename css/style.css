@@ -6,8 +6,9 @@ body { font: 400 16px/1.5 -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
 
 /* h1 (Header1) ist Haupttitel, h2 die normalen Titel, h3 die fetten Zwischentitel auf Kontaktformular, p (Paragraph) ist der normale Text */
 h1 { font-size:1.63em; font-weight: 300; letter-spacing: -1px; }
-h2 { font-size: 2em; font-weight: 400; margin-bottom: 15px; margin-top: 50px; }
+h2 { font-size: 2em; font-weight: 400; margin-bottom: 15px; margin-top: 30px; }
 h3 { font-size: 1.2em; font-weight: 700; margin-bottom: 0px; }
+h4 { font-size:1.15em; font-weight: 400; margin-bottom: 4px; }
 p { font-size:1.15em; margin-bottom: 0px; }
 
 /* alle Hyperlinks sind nicht unterstrichen, Farbe von Links */
@@ -18,7 +19,6 @@ a:visited { color: #1756a9; }
 
 /* Der ganze Textbereich ist max. 740px breit */
 .zentrierung { max-width: 740px; margin: auto; }
-
 /* Mobile Geräte Rand vergrössern */
 @media screen and (max-width: 768px) {
     .zentrierung { max-width: 90%; margin: auto; }
@@ -30,11 +30,17 @@ a:visited { color: #1756a9; }
 /* der Haupttitel links und mit definierter Farbe (wäre sonst blau) */
 .navbar a { float: left; color: #2b2b2b; margin-top: 7px; margin-bottom: 10px; }
 /* Kontakt rechtsbündig */
-.navbarKontakt a { float: right; color: #2b2b2b; margin-top: 15px; }
-
+.navbarKontakt a { float: right; color: #2b2b2b; margin-top: 10px; }
+/* Preise rechtsbündig */
+.navbarPreise a { float: right; margin-right: 14px; color: #2b2b2b; margin-top: 10px; }
 
 /* Nach der Navigation kommt ein Abstand, sonst rutscht der Text unter die Titelleiste */
-.main { margin-top: 40px; } 
+.main { margin-top: 60px; } 
+/* Mobile Geräte Abstand oben grösser */
+@media screen and (max-width: 768px) {
+    .main { margin-top: 90px; } 
+}
+
 
 /* Fusszeile */
 /* Linie */

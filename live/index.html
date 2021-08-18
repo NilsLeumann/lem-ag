@@ -11,28 +11,26 @@
 		<link rel="stylesheet" href="/css/style.css">
 		<title>Live | LEM AG - IT Solutions</title>
 		
-		<!-- Global site tag (gtag.js) - Google Analytics -->
-		<script async src="https://www.googletagmanager.com/gtag/js?id=G-13BBEQF9P8"></script>
-		<script>
- 		 window.dataLayer = window.dataLayer || [];
- 		 function gtag(){dataLayer.push(arguments);}
-  		 gtag('js', new Date());
-
- 		 gtag('config', 'G-13BBEQF9P8');
-		</script>
+		<script src="script.js"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.2.2/jquery.min.js"></script>
+		<script> 
+				$(function(){
+			$("#footer").load("../assets/footerMail.html"); 
+			$("#navbar").load("../assets/navbar.html");
+			$("#analytics").load("../assets/analytics.html");
+			});
+		</script> 
+		
+		<div id="analytics"></div>
+		
 	</head>
 
 	<body>	
-		<div class="navbar">
-			<div class="zentrierung">
-				<h1><a href="/">LEM AG - IT Solutions</a></h1>
-				<div class="navbarKontakt"><a href="https://lem-ag.ch/kontakt/">Kontakt</a></div>
-			</div>
-		</div>
+	
+		<div id="navbar"></div>
 		
 		<div class="main">
-			<div class="zentrierung">
-				<br>
+			<div class="zentrierung">				
 				<br>
 				<a href="https://lem-ag.ch/download">Zum Download:</a>
 				<br>
@@ -42,20 +40,14 @@
 				<br>
 				<h3>Der Download ist noch bis am 31.8.2021 möglich! Danach nur noch auf Anfrage.</h3>
 				<br>
-				<p>Je nach Internetgeschwindigkeit und Anzahl anderer Personen, die den Livestream aktuell herunterladen, kann der Download lange dauern. Bei Problemen bitte melden. Besten Dank!</p>
+				<h4>Je nach Internetgeschwindigkeit und Anzahl anderer Personen, die den Livestream aktuell herunterladen, kann der Download lange dauern. Bei Problemen bitte melden. Besten Dank!</h4>
 				<br>
 				<br>
 			</div>
 		</div> 
 
-		<div class="site-footer">
-			<div class="zentrierung">
-				<p>LEM AG - IT Solutions</p>
-				<br>
-				<div class="footer">Nils Leumann<br><a href="mailto:nils.leumann@lem-ag.ch">nils.leumann@lem-ag.ch</a><br><br>Kompetente Planung und Durchführung von Informatik-Projekten</div>
-			</div>
-		</div>
-
+		<div id="footer"></div>
+		
 	</body>
 
 </html>

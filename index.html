@@ -7,62 +7,55 @@
 		<meta name="keywords" content="Computerproblem, VPN, WLAN, LAN, NAS-System, kostengünstig, Server">
 		<meta name="author" content="nilsl" >
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
-		<link rel="shortcut icon" type="image/png" href="favicon.png">
-		<link rel="stylesheet" href="css/style.css">
+		<link rel="shortcut icon" type="image/png" href="../favicon.png">
+		<link rel="stylesheet" href="../css/style.css">
 		<title>LEM AG - IT Solutions</title>
 		
-		<!-- Global site tag (gtag.js) - Google Analytics -->
-		<script async src="https://www.googletagmanager.com/gtag/js?id=G-JDWKJ6EXRX"></script>
-		<script>
-			window.dataLayer = window.dataLayer || [];
-			function gtag(){dataLayer.push(arguments);}
-			gtag('js', new Date());
-
-			gtag('config', 'G-JDWKJ6EXRX');
-		</script>
-
+		<script src="script.js"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.2.2/jquery.min.js"></script>
+		<script> 
+				$(function(){
+			$("#footer").load("../assets/footerMail.html"); 
+			$("#navbar").load("../assets/navbar.html");
+			$("#analytics").load("../assets/analytics.html");
+			});
+		</script> 
+		
+		<div id="analytics"></div>
+	
 	</head>
 
 	<body>	
-		<div class="navbar">
-			<div class="zentrierung">
-				<h1><a href="https://lem-ag.ch/">LEM AG - IT Solutions</a></h1>
-				<div class="navbarKontakt"><a href="/kontakt/">Kontakt</a></div>
-			</div>
-		</div>
+	
+		<div id="navbar"></div>
 		
 		<div class="main">
 			<div class="zentrierung">
 				<h2>Von klein bis gross</h2>
-				<p>Von einfachen Computerproblemen bei Privatanwender lösen bis zu grossen, flächendeckenden Firmennetzwerken mit tausenden Geräten, auch off-site per VPN verbunden, planen und einrichten.</p>
+				<h4>Von einfachen Computerproblemen bei Privatanwender lösen bis zu grossen, flächendeckenden Firmennetzwerken mit tausenden Geräten, auch off-site per VPN verbunden, planen und einrichten.</h4>
 				<h2>Zuverlässig und kostengünstig</h2>
-				<p>Wir bieten kompetente Dienstleistungen zu einem angemessenen Preis</p>
+				<h4>Wir bieten kompetente Dienstleistungen zu einem angemessenen Preis</h4>
 				<h2>Individuell und flexibel</h2>
-				<p>Wir passen uns genaustens Ihren Bedürfnissen an mit flexiblen Angeboten</p>
+				<h4>Wir passen uns genaustens Ihren Bedürfnissen an mit flexiblen Angeboten</h4>
 				<h2>Unsere Dienstleistungen:</h2>
-				<p>Einrichten und instand halten von Computern und anderen Endgeräten</p>
+				<h4>Einrichten und instand halten von Computern und anderen Endgeräten</h4>
 				<br>
-				<p>Planung und Installation von WLAN- und LAN-Netzwerken aller Grössen – von zuverlässigem Internet für zu Hause bis zur Vernetzung von ganzen Firmengebäuden</p>
+				<h4>Planung und Installation von WLAN- und LAN-Netzwerken aller Grössen – von zuverlässigem Internet für zu Hause bis zur Vernetzung von ganzen Firmengebäuden</h4>
 				<br>
-				<p>Einrichten und instand halten von Servern oder NAS-System inklusive kostengünstigen, automatischen und zuverlässigen Backup-Lösungen für alle Datenmengen</p>
+				<h4>Einrichten und instand halten von Servern oder NAS-System inklusive kostengünstigen, automatischen und zuverlässigen Backup-Lösungen für alle Datenmengen</h4>
 				<br>
-				<p>Work-from-home VPN-Zugriff für existierende Netzwerke</p>
+				<h4>Work-from-home VPN-Zugriff für existierende Netzwerke</h4>
 				<br>
-				<p>Installation von Netzwerk-Kabel in Gebäuden</p>
+				<h4>Installation von Netzwerk-Kabel in Gebäuden</h4>
 				<br>
-				<p>…und noch viel mehr</p>
+				<h4>…und noch viel mehr</h4>
 				<br>
 				<br>
 			</div>
 		</div> 
 
-		<div class="site-footer">
-			<div class="zentrierung">
-				<p>LEM AG - IT Solutions</p>
-				<br>
-				<div class="footer">Nils Leumann<br><a href="mailto:nils.leumann@lem-ag.ch">nils.leumann@lem-ag.ch</a><br><br>Kompetente Planung und Durchführung von Informatik-Projekten</div>
-			</div>
-		</div>
+		<div id="footer"></div>
+
 
 	</body>
 

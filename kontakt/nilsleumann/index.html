@@ -7,48 +7,41 @@
 		<meta name="keywords" content="Computerproblem, VPN, WLAN, LAN, NAS-System, kostengünstig, Server">
 		<meta name="author" content="nilsl" >
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
-		<link rel="shortcut icon" type="image/png" href="/favicon.png">
-		<link rel="stylesheet" href="/css/style.css">
+		<link rel="shortcut icon" type="image/png" href="../favicon.png">
+		<link rel="stylesheet" href="../css/style.css">
 		<title>Kontakt Nils Leumann | LEM AG - IT Solutions</title>
 		
-		<!-- Global site tag (gtag.js) - Google Analytics -->
-		<script async src="https://www.googletagmanager.com/gtag/js?id=G-JDWKJ6EXRX"></script>
-		<script>
-			window.dataLayer = window.dataLayer || [];
-			function gtag(){dataLayer.push(arguments);}
-			gtag('js', new Date());
-
-			gtag('config', 'G-JDWKJ6EXRX');
-		</script>
+		<script src="script.js"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.2.2/jquery.min.js"></script>
+		<script> 
+				$(function(){
+			$("#footer").load("../assets/footerNoMail.html"); 
+			$("#navbar").load("../assets/navbar.html");
+			$("#analytics").load("../assets/analytics.html");
+			});
+		</script> 
+		
+		<div id="analytics"></div>
+		
 	</head>
 
 	<body>	
-		<div class="navbar">
-			<div class="zentrierung">
-				<h1><a href="/">LEM AG - IT Solutions</a></h1>
-				<div class="navbarKontakt"><a href="/kontakt/">Kontakt</a></div>
-			</div>
-		</div>
+		
+		<div id="navbar"></div>
 		
 		<div class="main">
 			<div class="zentrierung">
 				<h2>Kontakt</h2>
 				<h3>IT-Spezialist:</h3>
-				<p>Nils Leumann</p>
-				<p>+41 78 745 88 77</p>
-				<p><a href="mailto:nils.leumann@lem-ag.ch">nils.leumann@lem-ag.ch</a></p>
+				<h4>Nils Leumann</h4>
+				<h4>+41 78 745 88 77</h4>
+				<h4><a href="mailto:nils.leumann@lem-ag.ch">nils.leumann@lem-ag.ch</a></h4>
 				<br>
 				<br>
 			</div>
 		</div> 
 
-		<div class="site-footer">
-			<div class="zentrierung">
-				<p>LEM AG - IT Solutions</p>
-				<br>
-				<div class="footer">Kompetente Planung und Durchführung von Informatik-Projekten</div>
-			</div>
-		</div>
+		<div id="footer"></div>
 
 	</body>
 
