@@ -32,7 +32,7 @@ a:visited { color: #1756a9; }
 /* Kontakt rechtsbündig */
 .navbarKontakt a { float: right; color: #2b2b2b; margin-top: 10px; }
 /* Preise rechtsbündig */
-.navbarPreise a { float: right; margin-right: 14px; color: #2b2b2b; margin-top: 10px; }
+.navbarPreise a { float: right; margin-right: 13px; color: #2b2b2b; margin-top: 10px; }
 
 /* Nach der Navigation kommt ein Abstand, sonst rutscht der Text unter die Titelleiste */
 .main { margin-top: 60px; } 
