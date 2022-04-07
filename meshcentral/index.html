@@ -45,7 +45,7 @@
 				  const element = document.createElement('p');
 				  const id = new URLSearchParams(window.location.search).get('id');
 				  if (!id) {
-					const emptyIdText = document.createTextNode('There was an error');
+					const emptyIdText = document.createTextNode('Leider konnte Ihre ID nicht geladen werden, bitte kontaktieren Sie uns');
 					element.appendChild(emptyIdText);
 				  } else {
 					const idText = document.createTextNode(id);
