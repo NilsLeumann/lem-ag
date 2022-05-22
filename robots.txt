@@ -2,3 +2,5 @@ User-agent: *
 Disallow: /assets/
 Disallow: /live/
 Disallow: /meshcentral/
+Disallow: /download/
+Disallow: /hilfe/
