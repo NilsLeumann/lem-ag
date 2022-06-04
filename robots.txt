@@ -3,4 +3,5 @@ Disallow: /assets/
 Disallow: /live/
 Disallow: /meshcentral/
 Disallow: /download/
+Disallow: /downloads/
 Disallow: /hilfe/
