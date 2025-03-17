@@ -4,3 +4,4 @@ Disallow: /meshcentral/
 Disallow: /download/
 Disallow: /downloads/
 Disallow: /hilfe/
+Disallow: /agb/
