@@ -1,24 +1,50 @@
 <!DOCTYPE html>
-<html>
+<html lang="de">
+
 <head>
   <meta charset="UTF-8">
-  <title>Redirecting…</title>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+  <meta name="description" content="Kompetente Planung und Durchführung von Informatik-Projekten">
+  <meta name="keywords" content="Computerproblem, VPN, WLAN, LAN, NAS-System, kostengünstig, Server, Swisscom, Ubiquiti, Unifi, Mikrotik, Internet, g.fast, VDSL2, DSL, U72, Telefonkabel, Netzwerkkabel">
+  <meta name="author" content="nilsl">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <link rel="apple-touch-icon" sizes="180x180" href="/icons/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/icons/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/icons/favicon-16x16.png">
+  <link rel="manifest" href="/icons/site.webmanifest">
+  <link rel="mask-icon" href="/icons/safari-pinned-tab.svg" color="#727272">
+  <link rel="shortcut icon" href="/icons/favicon.ico">
+  <meta name="msapplication-TileColor" content="#00aba9">
+  <meta name="msapplication-config" content="/icons/browserconfig.xml">
+  <meta name="theme-color" content="#ffffff">
+
+  <link rel="stylesheet" href="/css/style.css">
+  <title>Formular Weiterleitung | LEM AG</title>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.2.2/jquery.min.js"></script>
   <script>
+    $(function () {
+      $("#footer").load("/assets/footerMail.html");
+      $("#navbar").load("/assets/navbar.html");
+      $("#analytics").load("/assets/analytics.html");
+    });
+
     window.onload = function () {
       const keys = [
         "1719048090", // ID
-        "852424448",  // First Name
-        "847354706",  // Last Name
-        "1600321209", // Address
-        "1880637321", // ZIP
-        "1754662852", // City
-        "2141516075", // Country
-        "1315816922"  // Email
+        "852424448",  // Vorname
+        "847354706",  // Nachname
+        "1600321209", // Adresse
+        "1880637321", // PLZ
+        "1754662852", // Ort
+        "2141516075", // Land
+        "1315816922"  // E-Mail
       ];
 
       const raw = decodeURIComponent(window.location.search.substring(1));
       if (!raw) {
-        document.getElementById("fallback").innerText = "No data provided.";
+        document.getElementById("fallback").innerText = "Keine Daten angegeben.";
         return;
       }
 
@@ -31,18 +57,28 @@
         }
       });
 
-      // Update fallback link before redirecting
       const link = document.getElementById("fallback-link");
       link.href = url;
-      link.innerText = "Click here if you're not redirected";
+      link.innerText = "Klicke hier, falls du nicht weitergeleitet wirst";
 
-      // Redirect
       window.location.href = url;
     };
   </script>
 </head>
+
 <body>
-  <p>Redirecting to Google Form…</p>
-  <p id="fallback"><a id="fallback-link" href="#">Click here if you're not redirected</a></p>
+  <div id="analytics"></div>
+  <div id="navbar"></div>
+
+  <div class="main">
+    <div class="zentrierung">
+      <h2>Formular Weiterleitung</h2>
+      <p>Du wirst weitergeleitet…</p>
+      <p id="fallback"><a id="fallback-link" href="#">Klicke hier, falls du nicht weitergeleitet wirst</a></p>
+    </div>
+  </div>
+
+  <div id="footer"></div>
 </body>
+
 </html>
