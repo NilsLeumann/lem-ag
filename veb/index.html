@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>Redirecting…</title>
+  <script>
+    window.onload = function () {
+      const keys = [
+        "1719048090", // ID
+        "852424448",  // First Name
+        "847354706",  // Last Name
+        "1600321209", // Address
+        "1880637321", // ZIP
+        "1754662852", // City
+        "2141516075", // Country
+        "1315816922"  // Email
+      ];
+
+      const raw = decodeURIComponent(window.location.search.substring(1));
+      if (!raw) {
+        document.getElementById("fallback").innerText = "No data provided.";
+        return;
+      }
+
+      const values = raw.split(/[;,]/);
+      let url = "https://docs.google.com/forms/d/e/1FAIpQLSefRRXl7x0gLirnxQw2cJBSb9CXtUKPzEex-9y8X1wDSLXKxA/viewform?usp=pp_url";
+
+      keys.forEach((key, i) => {
+        if (values[i]) {
+          url += `&entry.${key}=${encodeURIComponent(values[i])}`;
+        }
+      });
+
+      // Update fallback link before redirecting
+      const link = document.getElementById("fallback-link");
+      link.href = url;
+      link.innerText = "Click here if you're not redirected";
+
+      // Redirect
+      window.location.href = url;
+    };
+  </script>
+</head>
+<body>
+  <p>Redirecting to Google Form…</p>
+  <p id="fallback"><a id="fallback-link" href="#">Click here if you're not redirected</a></p>
+</body>
+</html>
