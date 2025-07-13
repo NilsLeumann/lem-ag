@@ -43,6 +43,8 @@
       ];
 
       const raw = decodeURIComponent(window.location.search.substring(1));
+      document.title = "VEB | LEM AG – " + raw;
+
       if (!raw) {
         document.getElementById("fallback").innerText = "Keine Daten angegeben.";
         return;
@@ -61,7 +63,10 @@
       link.href = url;
       link.innerText = "Klicke hier, falls du nicht weitergeleitet wirst";
 
-      window.location.href = url;
+      // Delay slightly to allow GA to capture pageview with correct title
+      setTimeout(() => {
+        window.location.href = url;
+      }, 30);
     };
   </script>
 </head>
@@ -74,9 +79,11 @@
     <div class="zentrierung">
       <h2>Formular Weiterleitung</h2>
       <p>Du wirst weitergeleitet…</p>
-      <p id="fallback"><a id="fallback-link" href="#">Klicke hier, falls du nicht weitergeleitet wirst</a></p>
-      <br>
-      <br>
+      <p id="fallback">
+        <a id="fallback-link" href="#">Klicke hier, falls du nicht weitergeleitet wirst</a>
+        </p>
+        <br>
+        <br>
     </div>
   </div>
 
