@@ -3,6 +3,4 @@ Disallow: /assets/
 Disallow: /meshcentral/
 Disallow: /download/
 Disallow: /downloads/
-Disallow: /hilfe/
 Disallow: /agb/
-Disallow: /veb/
